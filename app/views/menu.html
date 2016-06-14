@@ -5,7 +5,11 @@
       <p>{{menu.rating}}<span ng-if="menu.rating > 4.0" ng-class="{highlight:menu.rating > 4.5}">- People Love this item!</span></p>
       <p>{{menu.img}}</p>
       <p>
-        <textarea ng-model="menu.newReview" name="menu.review" rows="3" cols="40">
+        <textarea ng-model="menu.newReview" name="menu.review" rows="3" cols="40"></textarea>
+      </p>
+      <p>
+        {{menu.newReview}}
+        <span ng-if="!menu.newReview">Why not write a review!</span>
       </p>
     </div>
   </div>

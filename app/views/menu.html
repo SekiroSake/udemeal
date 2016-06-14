@@ -3,7 +3,7 @@
     <div class="col-md-4" >
       <img class="item_image" ng-src="images/{{item.image}}" alt="{{item.name}}">
       <h4>{{item.name}}</h4>
-      <p>Rating: {{item.rating}}<span ng-if="menu.rating > 4.0" ng-class="{highlight:menu.rating > 4.5}">- People Love this item!</span></p>
+      <p>Rating: {{item.rating}}<span ng-if="item.rating > 4.0" ng-class="{highlight:item.rating > 4.5}">- People Love this item!</span></p>
       <p>Image: {{item.img}}</p>
       <!--p>
         <textarea ng-model="menu.newReview" name="menu.review" rows="3" cols="40"></textarea>

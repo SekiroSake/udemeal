@@ -4,5 +4,10 @@
   "img": "chicken-pomegranate-salad.jpg",
   "calories": 430,
   "rating": 4.1,
-  "description":"A simple,sweet and delicious salad of chicken"
+  "description":"A simple,sweet and delicious salad of chicken",
+  "reviews":[
+      "Delicious I love it",
+      "very good ",
+      "thats why I love it"
+  ]
 }

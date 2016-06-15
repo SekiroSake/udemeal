@@ -24,4 +24,12 @@ angular
       templateUrl:'views/item.html',
       controller:'ItemCtrl as item'
     })
+    .state('item.nutrition',{
+      url:'/nutrition',
+      templateUrl:'views/item-nutrition.html'
+    })
+    .state('item.reviews',{
+      url:'/reviews',
+      templateUrl:'views/item-reviews.html'
+    });
   }]);

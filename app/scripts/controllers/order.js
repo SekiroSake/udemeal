@@ -8,10 +8,6 @@
  * Controller of the udemealApp
  */
 angular.module('udemealApp')
-  .controller('OrderCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('OrderCtrl', ['orderManager',function (orderManager) {
+    this.list = orderManager.getOrders();
+  }]);

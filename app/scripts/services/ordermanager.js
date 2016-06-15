@@ -31,10 +31,29 @@ angular.module('udemealApp')
         lunch:'',
         dinner:''
       },
-      Triday:{
+      Friday:{
         breakfast:'',
         lunch:'',
         dinner:''
       },
     };
+
+    this.getActiveDay = function(){
+      return selectedDay;
+    }
+    this.setActiveDay = function(day){
+      selectedDay = day;
+    }
+
+    this.chooseMenuOption = function(meal, menuItem){
+      OrderSelection[selectedDay][meal] = menuItem;
+    };
+
+    this.removeMenuOption = function(day, menuCategory){
+      OrderSelection[day][menuCategory] = '';
+    };
+
+    this.getOrders = function(){
+      return OrderSelection;
+    }
   });
